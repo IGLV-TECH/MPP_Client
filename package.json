@@ -1,10 +1,16 @@
 {
   "dependencies": {
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/native-stack": "^6.9.12",
     "expo": "^48.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.71.3",
-    "react-native-web": "~0.18.7"
+    "react-native-qrcode-svg": "^6.2.0",
+    "react-native-share": "^8.2.2",
+    "react-native-svg": "^13.4.0",
+    "react-native-web": "~0.18.7",
+    "rn-fetch-blob": "^0.12.0"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
