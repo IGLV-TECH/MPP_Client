@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
         backgroundColor: "#E6E6E6"
     },
     statistics: {
-        fontFamily: "comic-sans-ms-regular",
         color: "#121212",
         fontSize: 18,
         marginTop: 12,
@@ -59,7 +58,6 @@ const styles = StyleSheet.create({
         marginLeft: 51
     },
     wallet: {
-        fontFamily: "comic-sans-ms-regular",
         color: "#121212",
         fontSize: 18,
         marginTop: 12,
@@ -73,7 +71,6 @@ const styles = StyleSheet.create({
         marginRight: 47
     },
     balance: {
-        fontFamily: "comic-sans-ms-regular",
         color: "#121212",
         height: 34,
         width: 193,

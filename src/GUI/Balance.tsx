@@ -25,7 +25,6 @@ const styles = StyleSheet.create({
         flex: 1
     },
     balance: {
-        fontFamily: "comic-sans-ms-regular",
         color: "#121212",
         fontSize: 23,
         marginTop: 59,
@@ -39,7 +38,6 @@ const styles = StyleSheet.create({
         marginLeft: 127
     },
     withdraw: {
-        fontFamily: "comic-sans-ms-regular",
         color: "#121212",
         fontSize: 18,
         marginTop: 13,
@@ -53,7 +51,6 @@ const styles = StyleSheet.create({
         marginLeft: 127
     },
     back: {
-        fontFamily: "comic-sans-ms-regular",
         color: "#121212",
         fontSize: 18,
         marginTop: 12,
