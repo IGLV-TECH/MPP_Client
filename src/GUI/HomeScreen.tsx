@@ -15,19 +15,21 @@ function LoadHomeScreen({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.balance}>Balance:</Text>
-            <QRCode
-                size={350}
-                // value={QRTextValue ? QRTextValue : 'NA'}
-                // logo={{uri: QRLogoImage}}
-                logoSize={60}
-                logoBackgroundColor='transparent'
-                //getRef={ref}
-            />
+            <Text style={styles.balance}>Balance: 44,6 lei</Text>
+            <View gradientImage="Gradient_gCW6jl9.png" style={styles.generate}>
+
+                <QRCode
+                    size={350}
+                    // value={QRTextValue ? QRTextValue : 'NA'}
+                    // logo={{uri: QRLogoImage}}
+                    logoSize={60}
+                    logoBackgroundColor='transparent'
+                    //getRef={ref}
+                />
+            </View>
+
             <View style={styles.buttonRow}>
-                <TouchableOpacity style={styles.button} onPress={handleStatisticsButton}>
-                    <Text style={styles.statistics}>Statistics</Text>
-                </TouchableOpacity>
+
                 <TouchableOpacity style={styles.button2} onPress={handleWalletButton}>
                     <Text style={styles.wallet}>Wallet</Text>
                 </TouchableOpacity>
@@ -40,10 +42,17 @@ const styles = StyleSheet.create({
     container: {
         flex: 1
     },
-    button: {
-        width: 105,
-        height: 51,
-        backgroundColor: "#E6E6E6"
+    // button: {
+    //     width: 105,
+    //     height: 51,
+    //     backgroundColor: "#E6E6E6"
+    // },
+    generate: {
+        width: 175,
+        height: 45,
+        backgroundColor: "rgba(230,191,131,1)",
+        marginTop: 60,
+        marginLeft: 20
     },
     statistics: {
         color: "#121212",
@@ -52,10 +61,9 @@ const styles = StyleSheet.create({
         marginLeft: 11
     },
     button2: {
-        width: 105,
-        height: 51,
-        backgroundColor: "rgba(230,230,230,1)",
-        marginLeft: 51
+        width: 105, //105
+        height: 51, //51
+        backgroundColor: "rgba(230,230,230,1)"
     },
     wallet: {
         color: "#121212",
@@ -66,8 +74,8 @@ const styles = StyleSheet.create({
     buttonRow: {
         height: 51,
         flexDirection: "row",
-        marginTop: 730,
-        marginLeft: 52,
+        marginTop: 450,
+        marginLeft: 140,
         marginRight: 47
     },
     balance: {
@@ -75,8 +83,8 @@ const styles = StyleSheet.create({
         height: 34,
         width: 193,
         fontSize: 18,
-        marginTop: -745,
-        marginLeft: 15
+        marginTop: 20,
+        marginLeft: 10
     }
 });
 
