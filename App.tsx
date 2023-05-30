@@ -10,6 +10,7 @@ import Share from 'react-native-share';
 import HomeScreen from "./src/GUI/HomeScreen";
 import Balance from "./src/GUI/Balance";
 import Statistics from "./src/GUI/Statistics";
+import LoadLogin from "./src/GUI/Login";
 
 const Stack = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ export default function App() {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+                <Stack.Screen name="Login" component={LoadLogin} />
                 <Stack.Screen name="HomeScreen" component={HomeScreen} />
                 <Stack.Screen name="Balance" component={Balance} />
                 <Stack.Screen name="Statistics" component={Statistics} />
