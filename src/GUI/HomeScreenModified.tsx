@@ -13,22 +13,23 @@ function LoadHomeScreen({navigation}) {
         navigation.replace('Balance');
     }
 
-    const QRTextValue = "1,PAPER_AND_CARDBOARD";
+    const handleGenerateButton = () => {
+        navigation.replace('Generate');
+    }
+
 
     return (
         <View style={styles.container}>
             <Text style={styles.balance}>Balance: 44,6 lei</Text>
-            <View gradientImage="Gradient_gCW6jl9.png" style={styles.generate}>
 
-                <QRCode
-                    size={350}
-                    value={QRTextValue ? QRTextValue : 'NA'}
-                    // logo={{uri: QRLogoImage}}
-                    logoSize={60}
-                    logoBackgroundColor='transparent'
-                    //getRef={ref}
-                />
+            <View style={styles.buttonRow2}>
+
+                <TouchableOpacity style={styles.button3} onPress={handleGenerateButton}>
+                    <Text style={styles.wallet}>Generate QRCodes</Text>
+                </TouchableOpacity>
             </View>
+
+
 
             <View style={styles.buttonRow}>
 
@@ -76,6 +77,11 @@ const styles = StyleSheet.create({
         height: 51, //51
         backgroundColor: "rgba(0, 123, 255, 1)",
     },
+    button3: {
+        width: 200, //105
+        height: 51, //51
+        backgroundColor: "rgba(0, 123, 255, 1)",
+    },
     wallet: {
         color: "#121212",
         fontSize: 18,
@@ -85,8 +91,15 @@ const styles = StyleSheet.create({
     buttonRow: {
         height: 51,
         flexDirection: "row",
-        marginTop: 450,
+        marginTop: 250,
         marginLeft: 75,
+        marginRight: 47
+    },
+    buttonRow2: {
+        height: 51,
+        flexDirection: "row",
+        marginTop: 300,
+        marginLeft: 90,
         marginRight: 47
     },
     balance: {
