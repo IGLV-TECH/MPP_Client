@@ -51,8 +51,8 @@ const styles = StyleSheet.create({
     button1: {
         width: 105,
         height: 51,
-        backgroundColor: "rgba(230,230,230,1)",
-        marginTop: 250,
+        backgroundColor: "rgba(0,123,255,1)",
+        marginTop: 200,
         marginLeft: 140
     },
     withdraw: {
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
     button2: {
         width: 105,
         height: 51,
-        backgroundColor: "rgba(230,230,230,1)",
+        backgroundColor: "rgba(0,123,255,1)",
         marginTop: 23,
         marginLeft: 140
     },

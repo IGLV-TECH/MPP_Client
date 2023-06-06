@@ -8,7 +8,7 @@ function LoadLogin({navigation}) {
 
     const handleLogin = () => {
         if (username === 'admin' && password === 'password') {
-            Alert.alert('Login Successful');
+            //Alert.alert('Login Successful');
             navigation.replace('HomeScreen');
         } else {
             Alert.alert('Invalid credentials');
@@ -17,7 +17,7 @@ function LoadLogin({navigation}) {
 
     return (
         <View style={styles.container}>
-            <Text style={styles.title}>EcoWin</Text>
+            <Text style={styles.title}>GreenMate</Text>
             <TextInput
                 placeholder="Username"
                 value={username}

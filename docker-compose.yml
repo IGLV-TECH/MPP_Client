@@ -13,7 +13,7 @@ services:
       - "5556:5556"
     expose:
       - "19000"
-      - "19006"
+      - "19007"
     volumes:
       - .:/home/node/iglv-rn
     healthcheck:

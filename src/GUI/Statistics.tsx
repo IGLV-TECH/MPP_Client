@@ -51,7 +51,6 @@ const styles = StyleSheet.create({
         marginLeft: 104,
     },
     statistics: {
-        fontFamily: "comic-sans-ms-regular",
         color: "#121212",
         fontSize: 23,
         marginTop: -128,
@@ -87,8 +86,8 @@ const styles = StyleSheet.create({
         width: 105,
         height: 51,
         backgroundColor: "rgba(230,230,230,1)",
-        marginTop: 463,
-        marginLeft: 128,
+        marginTop: 350,
+        marginLeft: 140,
     },
     back: {
         color: "#121212",

@@ -33,6 +33,9 @@ function LoadHomeScreen({navigation}) {
                 <TouchableOpacity style={styles.button2} onPress={handleWalletButton}>
                     <Text style={styles.wallet}>Wallet</Text>
                 </TouchableOpacity>
+                <TouchableOpacity style={styles.button1} onPress={handleStatisticsButton}>
+                    <Text style={styles.statistics}>Statistics</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
@@ -60,10 +63,16 @@ const styles = StyleSheet.create({
         marginTop: 12,
         marginLeft: 11
     },
+    button1: {
+        width: 105, //105
+        height: 51, //51
+        backgroundColor: "rgba(0, 123, 255, 1)",
+        marginLeft: 25
+    },
     button2: {
         width: 105, //105
         height: 51, //51
-        backgroundColor: "rgba(230,230,230,1)"
+        backgroundColor: "rgba(0, 123, 255, 1)",
     },
     wallet: {
         color: "#121212",
@@ -75,7 +84,7 @@ const styles = StyleSheet.create({
         height: 51,
         flexDirection: "row",
         marginTop: 450,
-        marginLeft: 140,
+        marginLeft: 75,
         marginRight: 47
     },
     balance: {
