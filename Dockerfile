@@ -17,4 +17,5 @@ RUN npm install --global eas-cli
 
 WORKDIR /home/node/iglv-rn
 
+
 CMD ["bash"]

@@ -8,12 +8,12 @@ services:
       - NODE_ENV=development
     tty: true
     ports:
-      - "19006:19006"
-      - "19000:19000"
-      - "5555:5555"
+      - "19007:19007"
+      - "19001:19001"
+      - "5556:5556"
     expose:
       - "19000"
-      - "19006"
+      - "19007"
     volumes:
       - .:/home/node/iglv-rn
     healthcheck:
